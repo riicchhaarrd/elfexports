@@ -242,7 +242,7 @@ void read_elf_header(const char* filename) {
 							if(
 							ELF32_ST_BIND(sym->st_info) == STB_GLOBAL
 							//|| ELF32_ST_BIND(sym->st_info) == STB_WEAK
-							&& ELF32_ST_TYPE(sym->st_info) == STT_FUNC
+							//&& ELF32_ST_TYPE(sym->st_info) == STT_FUNC
 							)
 							{
 								const char *symbol_name = sym->st_name + dyn_string_table;
