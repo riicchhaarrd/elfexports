@@ -94,7 +94,7 @@ typedef struct
 	char magic[4];
 	u8 class;
 	u8 endianness;
-	u8 verison;
+	u8 version;
 	u8 osabi;
 	u8 abiversion;
 	u8 pad_unused[7];
