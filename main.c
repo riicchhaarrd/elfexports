@@ -239,8 +239,8 @@ void read_elf_header(const char* filename) {
 						for(u32 k = 1; k < numsymbols; ++k) //first is always reserved SHN_UNDEF
 						{
 							elfx86_sym_t *sym = (elfx86_sym_t*)elf_get_section(hdr, i) + k;
-							if(
-							ELF32_ST_BIND(sym->st_info) == STB_GLOBAL
+							if(1
+							//ELF32_ST_BIND(sym->st_info) == STB_GLOBAL
 							//|| ELF32_ST_BIND(sym->st_info) == STB_WEAK
 							//&& ELF32_ST_TYPE(sym->st_info) == STT_FUNC
 							)
